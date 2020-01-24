@@ -89,9 +89,30 @@ html {
       }
 
       .btn {
+        .keyframes(@name; @arguments) {
+          @-moz-keyframes @name { @arguments(); }
+          @-webkit-keyframes @name { @arguments(); }
+          @keyframes @name { @arguments(); }
+        }
+        
+        .animation(@arguments) {
+          -webkit-animation: @arguments;
+          -moz-animation: @arguments;
+          animation: @arguments;
+        }
+
         button {
           .custom-button (rgb(31, 37, 53), 4px, white);
           .center();
+              
+            .keyframes(fade-in;{
+              0% { opacity: 0; }
+              100% { opacity: 1; }
+              });
+          
+            .animation(fade-in 0.5s linear infinite alternate)
+          
+          }
 
           @media @mobile {
             width: 470px;
@@ -185,6 +206,6 @@ html {
     .center()
   }
 
-}
+
 
 // home

@@ -210,11 +210,6 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-.home {
-  /* Style the submit button with a specific background color etc */
-  /* When moving the mouse over the submit button, add a darker green color */
-  /* Add a background color and some padding around the form */
-}
 @media (max-width: 500px) {
   .home .intro img {
     width: 500px;
@@ -295,51 +290,78 @@ html {
   text-align: center;
   display: flex;
   justify-content: center;
+  -webkit-animation: fade-in 0.5s linear infinite alternate;
+  -moz-animation: fade-in 0.5s linear infinite alternate;
+  animation: fade-in 0.5s linear infinite alternate;
 }
 .home .walk .walk-text .btn button:hover {
   background-color: transparent;
   color: black;
   border: 1px solid black;
 }
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn button {
+  .home .walk .walk-text .btn {
     width: 470px;
     background-color: #1f2535;
   }
 }
-.home .walk .walk-img {
+.home .walk-img {
   width: 46%;
   margin-left: 4%;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-img {
+  .home .walk-img {
     width: 100%;
     margin-top: 3%;
     margin-left: 0%;
     margin-bottom: 3%;
   }
 }
-.home .walk .walk-img img {
+.home .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-img img {
+  .home .walk-img img {
     width: 470px;
   }
 }
-.home #sectiontitle {
+#sectiontitle {
   font-size: 2.5rem;
   margin-bottom: 2%;
 }
-.home #sectiontitle div {
+#sectiontitle div {
   display: flex;
   justify-content: center;
 }
-.home input[type="text"],
-.home select,
-.home textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   /* Full width */
   padding: 12px;
@@ -357,26 +379,29 @@ html {
   resize: vertical;
   /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-.home input[type="submit"] {
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
   padding: 12px 20px;
   border-radius: 4px;
   cursor: pointer;
   color: black;
 }
-.home input[type="submit"]:hover {
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
   background-color: black;
   color: white;
 }
-.home .container3 {
+/* Add a background color and some padding around the form */
+.container3 {
   border-radius: 5px;
   background-color: whitesmoke;
   padding: 30px;
 }
-.home .mainform {
+.mainform {
   width: 500px;
   margin-bottom: 2%;
 }
-.home .contact {
+.contact {
   display: flex;
   justify-content: center;
 }
