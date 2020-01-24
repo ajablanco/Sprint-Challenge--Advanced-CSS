@@ -210,6 +210,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+.home {
+  /* Style the submit button with a specific background color etc */
+  /* When moving the mouse over the submit button, add a darker green color */
+  /* Add a background color and some padding around the form */
+}
 @media (max-width: 500px) {
   .home .intro img {
     width: 500px;
@@ -323,4 +328,55 @@ html {
   .home .walk .walk-img img {
     width: 470px;
   }
+}
+.home #sectiontitle {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+.home #sectiontitle div {
+  display: flex;
+  justify-content: center;
+}
+.home input[type="text"],
+.home select,
+.home textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.home input[type="submit"] {
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+}
+.home input[type="submit"]:hover {
+  background-color: black;
+  color: white;
+}
+.home .container3 {
+  border-radius: 5px;
+  background-color: whitesmoke;
+  padding: 30px;
+}
+.home .mainform {
+  width: 500px;
+  margin-bottom: 2%;
+}
+.home .contact {
+  display: flex;
+  justify-content: center;
 }
