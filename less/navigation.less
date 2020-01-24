@@ -1,1 +1,38 @@
 // Navigation code here
+
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    .column();
+    background-color: rgba(244, 244, 244, 0.8);
+
+    @media @mobile {
+        width: 100%;
+    }
+   
+    h1 {
+        margin: 2%;
+        font-size: 5rem;
+        @media @mobile {
+            font-size: 3.5rem;
+        }
+    }
+
+    nav {
+        width: 80%;
+        font-size: 2rem;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: space-evenly;
+
+        @media @mobile {
+            font-size: 1.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

@@ -9,6 +9,9 @@
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -17,11 +20,25 @@
 <body>
 
  <!-- navigation code here -->
+<section class="navbar">
+  <h1>
+    SpaceWalkers
+  </h1>
+  <nav>
+    <a href="">Home</a>
+    <a href=aboutus.html>About Us</a>
+    <a href="">Blog</a>
+    <a href="">Contact</a>
+    <a href="">Sign In</a>
+  </nav>
+</section>
+
 
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
+       <img src="img/main-header.png" alt="img of space">
 
       <h2>Lift Off</h2>
     
@@ -29,9 +46,9 @@
     </header>
 
     <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+        <img class="img1" src="img/blast.png" class="blast" alt="Rocket blasting off">
+        <img class="noimg" src="img/sky.png" class="sky" alt="Space sky image">
+        <img class="noimg" src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
    
     <section class="visit-planets">
@@ -52,7 +69,7 @@
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
         <div class="btn">
-          Sign Up
+          <button>Sign Up</button>
         </div>
       </div>
       
@@ -60,6 +77,34 @@
           <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
 
+    </section>
+
+    <section id="sectiontitle">
+      <div>
+        <h1 id="form">Sign up for SpaceWalkers Magazine</h1>
+      </div>
+    </section>
+  
+    <section class="contact" id="Contact">
+      <div class="mainform">
+  
+        <div class="container3">
+          <form action="action_page.php">
+  
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email address..">
+
+            <input type="submit" value="Submit">
+  
+          </form>
+        </div>
+      </div>
     </section>
 
     <footer>
