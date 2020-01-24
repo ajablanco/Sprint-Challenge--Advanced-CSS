@@ -1,1 +1,29 @@
 // Mixins Here
+.center(){
+    display: flex;
+    justify-content: center;
+  }
+
+.column(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+
+//Parametric Mixins
+
+.custom-button (@bg-color, @border-radius, @color){
+    background-color: @bg-color;
+    border-radius: @border-radius;
+    color: @color;
+    padding: 3%;
+    width: 150px;
+    font-size: 1.5rem;
+    text-align: center;
+
+    &:hover {
+        background-color: transparent;
+        color: black;
+        border: 1px solid black;
+    }
+}
