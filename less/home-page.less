@@ -91,6 +91,7 @@ html {
       }
 
       .btn {
+        .center();
         .keyframes(@name; @arguments) {
           @-moz-keyframes @name { @arguments(); }
           @-webkit-keyframes @name { @arguments(); }
@@ -105,6 +106,8 @@ html {
 
         button {
           .custom-button (rgb(31, 37, 53), 4px, white);
+          border: none;
+          text-align: center;
           .center();
               
             .keyframes(fade-in;{
@@ -119,6 +122,7 @@ html {
           @media @mobile {
             width: 470px;
             background-color: rgb(31, 37, 53);
+            
           }
         }
       }
@@ -145,7 +149,7 @@ html {
         }
       }
     }
-  }
+  
 
   #sectiontitle {
 
@@ -258,4 +262,5 @@ html {
     }
     
   }
+}
 }
