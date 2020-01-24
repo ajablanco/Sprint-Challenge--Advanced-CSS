@@ -9,6 +9,12 @@ html {
 
   .intro {
 
+    img {
+      @media @mobile{
+        width: 500px;
+      }
+    }
+
     h2 {
       padding: 15px;
     }
@@ -23,6 +29,16 @@ html {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @mobile {
+      .img1 {
+        width: 100%;
+      }
+
+      .noimg {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
@@ -50,8 +66,19 @@ html {
     padding: 50px 60px;
     .center();
 
+    @media @mobile {
+      .columnreverse();
+      margin-top: 5%;
+      margin: 3%;
+      padding: 0;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @mobile {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -62,18 +89,37 @@ html {
       }
 
       .btn {
-        .custom-button (black, 4px, white)
+        button {
+          .custom-button (rgb(31, 37, 53), 4px, white); 
+          .center();
+          
+          @media @mobile {
+            width: 470px;
+            background-color: rgb(31, 37, 53);
+          }
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @mobile {
+        width: 100%;
+        margin-top: 3%;
+        margin-left: 0%;
+        margin-bottom: 3%;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+      @media @mobile {
+        width: 470px;
+      }
       }
     }
   }
